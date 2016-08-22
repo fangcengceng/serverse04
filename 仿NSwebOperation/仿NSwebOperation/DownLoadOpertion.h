@@ -11,4 +11,5 @@
 @interface DownLoadOpertion : NSOperation
 @property(nonatomic,copy)NSString *urlName;
 @property(nonatomic,copy)void(^myblock)(UIImage *image);
++(instancetype)dodownload:(NSString*)str finishedBlock:(void(^)(UIImage *imag))finishblock;
 @end

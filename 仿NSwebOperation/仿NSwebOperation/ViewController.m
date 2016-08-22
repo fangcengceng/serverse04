@@ -34,8 +34,8 @@
 //    //直接定义NSOpertaiton 从网络下载图片
    //[self demo2];
 //     //自定义NSOpertion从网络下载图片,利用属性和block；
-      [self demo3];
-    
+      [self demo4];
+    //自定义NSOperation从网络下载图片，利用类方法；
     
   //利用自定义NSOpertaitonBlock ,仿造NSWEbimage第三方矿建；
     
@@ -98,10 +98,22 @@
     DownLoadOpertion *op = [[DownLoadOpertion alloc] init];
      NSString *str = @"http://img2.3lian.com/2014/c7/12/d/77.jpg";
     op.urlName = str;
+    //定义事先准备好的代码块；
     op.myblock = ^(UIImage * img){
-        self.imageVIew.image= img;
+      self.imageVIew.image= img;
     };
+    
+   
    [_queue addOperation:op];
     
+}
+//利用类方法，直接完成
+
+-(void)demo4{
+    NSString *str = @"http://img2.3lian.com/2014/c7/12/d/77.jpg";
+   DownLoadOpertion *op = [DownLoadOpertion dodownload:str finishedBlock:^(UIImage *imag) {
+       self.imageVIew.image = imag;
+   }];
+    [_queue addOperation:op];
 }
 @end
