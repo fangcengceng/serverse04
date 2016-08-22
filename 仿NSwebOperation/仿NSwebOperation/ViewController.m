@@ -28,12 +28,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _queue = [[NSOperationQueue alloc] init];
-
-    //利用NSblockOperation从网络下载图片
-    [self demo1];
-    //直接定义NSOpertaiton 从网络下载图片
-    [self demo2];
-     //自定义NSOpertion从网络下载图片；
+//
+//    //利用NSblockOperation从网络下载图片
+//    [self demo1];
+//    //直接定义NSOpertaiton 从网络下载图片
+//    [self demo2];
+//     //自定义NSOpertion从网络下载图片；
     [self demo3];
     
   //利用自定义NSOpertaitonBlock ,仿造NSWEbimage第三方矿建；
@@ -94,8 +94,11 @@
 }
   //步骤，创建操作，创建全局队列，在子线程下载图片，回到主线程刷新界面，将操作添加到队列中；
 -(void)demo3{
+    DownLoadOpertion *op = [[DownLoadOpertion alloc] init];
+     NSString *str = @"http://img2.3lian.com/2014/c7/12/d/77.jpg";
+    op.urlName = str;
     
-    
+    [_queue addOperation:op];
     
 }
 @end

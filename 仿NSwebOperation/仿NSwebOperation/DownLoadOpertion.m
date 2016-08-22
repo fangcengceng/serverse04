@@ -11,7 +11,10 @@
 @implementation DownLoadOpertion
 //
 -(void)main{
-    
+    //在自定义操作中下载图片；
+    NSURL *url = [NSURL URLWithString:self.urlName];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    //UIimage在UIKit框架中，所以需要添加UIKit框架；
     
     
     
