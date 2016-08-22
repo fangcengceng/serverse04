@@ -13,6 +13,8 @@
 		201675D61D6AB9FA00333DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201675D41D6AB9FA00333DA8 /* Main.storyboard */; };
 		201675D81D6AB9FA00333DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201675D71D6AB9FA00333DA8 /* Assets.xcassets */; };
 		201675DB1D6AB9FA00333DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201675D91D6AB9FA00333DA8 /* LaunchScreen.storyboard */; };
+		201675E41D6ABD1800333DA8 /* WEBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 201675E31D6ABD1800333DA8 /* WEBModel.m */; };
+		201675E71D6AC87C00333DA8 /* DownLoadOpertion.m in Sources */ = {isa = PBXBuildFile; fileRef = 201675E61D6AC87C00333DA8 /* DownLoadOpertion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		201675D71D6AB9FA00333DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201675DA1D6AB9FA00333DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		201675DC1D6AB9FA00333DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201675E21D6ABD1800333DA8 /* WEBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WEBModel.h; sourceTree = "<group>"; };
+		201675E31D6ABD1800333DA8 /* WEBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WEBModel.m; sourceTree = "<group>"; };
+		201675E51D6AC87C00333DA8 /* DownLoadOpertion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadOpertion.h; sourceTree = "<group>"; };
+		201675E61D6AC87C00333DA8 /* DownLoadOpertion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadOpertion.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				201675CF1D6AB9FA00333DA8 /* AppDelegate.m */,
 				201675D11D6AB9FA00333DA8 /* ViewController.h */,
 				201675D21D6AB9FA00333DA8 /* ViewController.m */,
+				201675E51D6AC87C00333DA8 /* DownLoadOpertion.h */,
+				201675E61D6AC87C00333DA8 /* DownLoadOpertion.m */,
+				201675E21D6ABD1800333DA8 /* WEBModel.h */,
+				201675E31D6ABD1800333DA8 /* WEBModel.m */,
 				201675D41D6AB9FA00333DA8 /* Main.storyboard */,
 				201675D71D6AB9FA00333DA8 /* Assets.xcassets */,
 				201675D91D6AB9FA00333DA8 /* LaunchScreen.storyboard */,
@@ -149,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201675E71D6AC87C00333DA8 /* DownLoadOpertion.m in Sources */,
+				201675E41D6ABD1800333DA8 /* WEBModel.m in Sources */,
 				201675D31D6AB9FA00333DA8 /* ViewController.m in Sources */,
 				201675D01D6AB9FA00333DA8 /* AppDelegate.m in Sources */,
 				201675CD1D6AB9FA00333DA8 /* main.m in Sources */,
@@ -300,6 +312,7 @@
 				201675E11D6AB9FA00333DA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
