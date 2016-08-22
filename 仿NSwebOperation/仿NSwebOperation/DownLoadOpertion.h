@@ -10,5 +10,5 @@
 #import "UIKit/UIKit.h"
 @interface DownLoadOpertion : NSOperation
 @property(nonatomic,copy)NSString *urlName;
-
+@property(nonatomic,copy)void(^myblock)(UIImage *image);
 @end
