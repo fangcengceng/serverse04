@@ -13,6 +13,7 @@
 		20AAB3A31D6BE57F00C341DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB3A11D6BE57F00C341DC /* Main.storyboard */; };
 		20AAB3A51D6BE57F00C341DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB3A41D6BE57F00C341DC /* Assets.xcassets */; };
 		20AAB3A81D6BE57F00C341DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AAB3A61D6BE57F00C341DC /* LaunchScreen.storyboard */; };
+		20AAB3B11D6BE6E900C341DC /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AAB3B01D6BE6E900C341DC /* DownloadOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		20AAB3A41D6BE57F00C341DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20AAB3A71D6BE57F00C341DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20AAB3A91D6BE57F00C341DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20AAB3AF1D6BE6E900C341DC /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		20AAB3B01D6BE6E900C341DC /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				20AAB39C1D6BE57F00C341DC /* AppDelegate.m */,
 				20AAB39E1D6BE57F00C341DC /* ViewController.h */,
 				20AAB39F1D6BE57F00C341DC /* ViewController.m */,
+				20AAB3AF1D6BE6E900C341DC /* DownloadOperation.h */,
+				20AAB3B01D6BE6E900C341DC /* DownloadOperation.m */,
 				20AAB3A11D6BE57F00C341DC /* Main.storyboard */,
 				20AAB3A41D6BE57F00C341DC /* Assets.xcassets */,
 				20AAB3A61D6BE57F00C341DC /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 				20AAB3A01D6BE57F00C341DC /* ViewController.m in Sources */,
 				20AAB39D1D6BE57F00C341DC /* AppDelegate.m in Sources */,
 				20AAB39A1D6BE57F00C341DC /* main.m in Sources */,
+				20AAB3B11D6BE6E900C341DC /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				20AAB3AE1D6BE57F00C341DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

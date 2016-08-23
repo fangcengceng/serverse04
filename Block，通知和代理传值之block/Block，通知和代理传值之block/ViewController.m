@@ -1,9 +1,5 @@
 //
-//  ViewController.m
-//  Block，通知和代理传值之block
-//
-//  Created by codygao on 16/8/23.
-//  Copyright © 2016年 HM. All rights reserved.
+// 需求。是实现异步下载图片，使用的多线程机制是NSOperation
 //
 
 #import "ViewController.h"
@@ -13,15 +9,21 @@
 @end
 
 @implementation ViewController
+{
+    NSOperationQueue *_queue;
+  
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    _queue = [[NSOperationQueue alloc] init];
+    
+    
+    
+    
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
