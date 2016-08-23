@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  Block，通知和代理传值之block
+//  block传值
 //
 //  Created by codygao on 16/8/23.
 //  Copyright © 2016年 HM. All rights reserved.
