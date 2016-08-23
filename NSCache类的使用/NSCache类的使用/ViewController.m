@@ -21,8 +21,9 @@
     [super viewDidLoad];
     //必须实例化否则，否则可以存进去，但是读取的时候全部都是nil;
     _catch = [[NSCache alloc] init];
+    //_catch.totalCostLimit= 4;
     //模拟最大存储数
-    _catch.countLimit = 5;
+     _catch.countLimit = 5;
     //代理方法
     _catch .delegate = self;
     
@@ -36,9 +37,9 @@
         NSLog(@"存入%@",obj);
     }
 }
-#pragma 代理方法，只是设定最大存储数，如果不设置代理，那么最大存储数不起总用；
+#pragma 代理方法，只要在被对象被移除的时候就会调用
 -(void)cache:(NSCache *)cache willEvictObject:(id)obj{
-    NSLog(@"删除%@",obj);
+    NSLog(@"被移除的对象，删除%@",obj);
 }
 - (IBAction)read:(id)sender {
     for (NSInteger i = 0; i<10; i++) {
@@ -50,6 +51,9 @@
     }
 }
 - (IBAction)removeAll:(id)sender {
+    
+    [_catch removeObjectForKey:@(7)];
+   
 }
 #pragma NSCache 的大坑，存在在removeallobject不可以写在内存警告方法中
 - (void)didReceiveMemoryWarning {
