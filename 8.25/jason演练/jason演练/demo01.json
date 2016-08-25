@@ -1,0 +1,18 @@
+{
+    "msg" : "success",
+    "error":"0",
+    "data":[
+            {
+            "name":"xiaoming",
+            "age" : "25",
+            "score" : "100"
+            },
+            {
+            "name" : "xiaofang",
+            "age" : "18",
+            "score":"130"
+            }
+            
+            ]
+    
+}

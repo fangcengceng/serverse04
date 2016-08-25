@@ -23,11 +23,13 @@
     [self.view addSubview:imagV];
     _imagV  = imagV;
     _queue = [[NSOperationQueue alloc] init];
+    
    NSBlockOperation *op = [NSBlockOperation blockOperationWithBlock:^{
         NSString *str = @"http://www.5068.com/u/faceimg/20140804114111.jpg";
         NSURL *url = [NSURL URLWithString:str];
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *imag = [UIImage imageWithData:data];
+       
        NSDictionary *userinfo = @{@"imagkey":imag};
        
         NSLog(@"%@",[NSThread currentThread]);
@@ -43,6 +45,8 @@
 }
 -(void)quzuoshiqing:(NSNotification*)info{
      UIImage *imaa = [info.userInfo valueForKey:@"imagkey"];
-    _imagV.image = imaa;
+    //取字典的value值的两种方法；
+    UIImage *immma = info.userInfo[@"imagkey"];
+    _imagV.image = immma;
 }
 @end
