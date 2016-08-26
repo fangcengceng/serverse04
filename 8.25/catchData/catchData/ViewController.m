@@ -46,8 +46,10 @@ static NSString *cellID = @"cellID";
            [temparray addObject:shop];
        }];
        _arrayList = temparray.copy;
-    [self.colletionView reloadData];
-
+           //刷新数据要在主线程进行，否则会显示不出来；
+           [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+             [self.colletionView reloadData];
+           }];
        }else{
            NSLog(@"%@",error);
        }
@@ -77,8 +79,9 @@ static NSString *cellID = @"cellID";
  
     appCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     cell.backgroundColor = [UIColor grayColor];
-    cell.shopmodel = _arrayList[indexPath.row];
-    cell.nameLabel.text = _arrayList[indexPath.row].shop_name;
+    cell.shopmodel = _arrayList[indexPath.item];
+    cell.nameLabel.text = _arrayList[indexPath.item].shop_name;
+    
     cell.imgView.image = [UIImage imageNamed:@"user_default"];
     NSURL *url = [NSURL URLWithString:_arrayList[indexPath.row].logo_url];
     NSData *data = [NSData dataWithContentsOfURL:url];

@@ -21,6 +21,11 @@
     }
     return self;
 }
+-(void)setShop:(shopModel *)shopmodel{
+    _shopmodel = shopmodel;
+    self.nameLabel.text = shopmodel.shop_name;
+    
+}
 -(void)setupUI{
   
 
@@ -37,9 +42,5 @@
         make.width.mas_equalTo(self.contentView.frame.size.width*0.5);
     }];
 }
--(void)setShop:(shopModel *)shopmodel{
-    self.shop = shopmodel;
-    self.nameLabel.text = shopmodel.shop_name;
-    
-}
+
 @end
