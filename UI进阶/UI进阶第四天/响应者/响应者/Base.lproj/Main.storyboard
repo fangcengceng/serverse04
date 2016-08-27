@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ui4-Li-bml">
+                                <rect key="frame" x="20" y="40" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFo-bQ-LcT">
+                                <rect key="frame" x="20" y="90" width="560" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="first" destination="BYZ-38-t0r" eventType="touchUpInside" id="V8V-9p-ktg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SQL-mo-iID">
+                                <rect key="frame" x="277" y="140" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="last:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pD7-5n-I1h"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoY-UN-L1k">
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.41960784309999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mFq-P8-rTc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IFo-bQ-LcT" firstAttribute="top" secondItem="ui4-Li-bml" secondAttribute="bottom" constant="20" id="2GO-Q1-SXb"/>
+                            <constraint firstItem="ui4-Li-bml" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6JJ-W7-HTJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ui4-Li-bml" secondAttribute="trailing" constant="20" id="CXL-uv-Ebt"/>
+                            <constraint firstItem="IFo-bQ-LcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EmW-hE-Nwk"/>
+                            <constraint firstItem="hoY-UN-L1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2G-Z9-eKV"/>
+                            <constraint firstItem="hoY-UN-L1k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HHr-TE-F0H"/>
+                            <constraint firstItem="SQL-mo-iID" firstAttribute="top" secondItem="IFo-bQ-LcT" secondAttribute="bottom" constant="20" id="LpX-xI-t19"/>
+                            <constraint firstItem="ui4-Li-bml" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OQr-F5-wsX"/>
+                            <constraint firstItem="SQL-mo-iID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qey-x4-j7J"/>
+                            <constraint firstItem="ui4-Li-bml" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Z1d-wI-UaN"/>
+                            <constraint firstItem="IFo-bQ-LcT" firstAttribute="trailing" secondItem="ui4-Li-bml" secondAttribute="trailing" id="hnz-5L-RmP"/>
+                            <constraint firstItem="SQL-mo-iID" firstAttribute="centerX" secondItem="IFo-bQ-LcT" secondAttribute="centerX" id="n9V-jU-FBx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="secondtext" destination="hoY-UN-L1k" id="DFD-vW-AzP"/>
+                        <outlet property="textField" destination="ui4-Li-bml" id="OJh-Gt-oR2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

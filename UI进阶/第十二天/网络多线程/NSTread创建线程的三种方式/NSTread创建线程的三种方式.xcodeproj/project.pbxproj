@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AD74C31D63387A00BD48FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD74C21D63387A00BD48FA /* main.m */; };
+		20AD74C61D63387A00BD48FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD74C51D63387A00BD48FA /* AppDelegate.m */; };
+		20AD74C91D63387A00BD48FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AD74C81D63387A00BD48FA /* ViewController.m */; };
+		20AD74CC1D63387A00BD48FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AD74CA1D63387A00BD48FA /* Main.storyboard */; };
+		20AD74CE1D63387A00BD48FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AD74CD1D63387A00BD48FA /* Assets.xcassets */; };
+		20AD74D11D63387A00BD48FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AD74CF1D63387A00BD48FA /* LaunchScreen.storyboard */; };
+		20ECB9B71D634D6000EAA13E /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20ECB9B61D634D6000EAA13E /* AViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20AD74BE1D63387A00BD48FA /* NSTread创建线程的三种方式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSTread创建线程的三种方式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AD74C21D63387A00BD48FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		20AD74C41D63387A00BD48FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		20AD74C51D63387A00BD48FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		20AD74C71D63387A00BD48FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20AD74C81D63387A00BD48FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20AD74CB1D63387A00BD48FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20AD74CD1D63387A00BD48FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20AD74D01D63387A00BD48FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20AD74D21D63387A00BD48FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20ECB9B51D634D6000EAA13E /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		20ECB9B61D634D6000EAA13E /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20AD74BB1D63387A00BD48FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20AD74B51D63387A00BD48FA = {
+			isa = PBXGroup;
+			children = (
+				20AD74C01D63387A00BD48FA /* NSTread创建线程的三种方式 */,
+				20AD74BF1D63387A00BD48FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20AD74BF1D63387A00BD48FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20AD74BE1D63387A00BD48FA /* NSTread创建线程的三种方式.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20AD74C01D63387A00BD48FA /* NSTread创建线程的三种方式 */ = {
+			isa = PBXGroup;
+			children = (
+				20AD74C41D63387A00BD48FA /* AppDelegate.h */,
+				20AD74C51D63387A00BD48FA /* AppDelegate.m */,
+				20AD74C71D63387A00BD48FA /* ViewController.h */,
+				20AD74C81D63387A00BD48FA /* ViewController.m */,
+				20ECB9B51D634D6000EAA13E /* AViewController.h */,
+				20ECB9B61D634D6000EAA13E /* AViewController.m */,
+				20AD74CA1D63387A00BD48FA /* Main.storyboard */,
+				20AD74CD1D63387A00BD48FA /* Assets.xcassets */,
+				20AD74CF1D63387A00BD48FA /* LaunchScreen.storyboard */,
+				20AD74D21D63387A00BD48FA /* Info.plist */,
+				20AD74C11D63387A00BD48FA /* Supporting Files */,
+			);
+			path = "NSTread创建线程的三种方式";
+			sourceTree = "<group>";
+		};
+		20AD74C11D63387A00BD48FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				20AD74C21D63387A00BD48FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20AD74BD1D63387A00BD48FA /* NSTread创建线程的三种方式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20AD74D51D63387A00BD48FA /* Build configuration list for PBXNativeTarget "NSTread创建线程的三种方式" */;
+			buildPhases = (
+				20AD74BA1D63387A00BD48FA /* Sources */,
+				20AD74BB1D63387A00BD48FA /* Frameworks */,
+				20AD74BC1D63387A00BD48FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSTread创建线程的三种方式";
+			productName = "NSTread创建线程的三种方式";
+			productReference = 20AD74BE1D63387A00BD48FA /* NSTread创建线程的三种方式.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20AD74B61D63387A00BD48FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HM;
+				TargetAttributes = {
+					20AD74BD1D63387A00BD48FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 20AD74B91D63387A00BD48FA /* Build configuration list for PBXProject "NSTread创建线程的三种方式" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20AD74B51D63387A00BD48FA;
+			productRefGroup = 20AD74BF1D63387A00BD48FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20AD74BD1D63387A00BD48FA /* NSTread创建线程的三种方式 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20AD74BC1D63387A00BD48FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20AD74D11D63387A00BD48FA /* LaunchScreen.storyboard in Resources */,
+				20AD74CE1D63387A00BD48FA /* Assets.xcassets in Resources */,
+				20AD74CC1D63387A00BD48FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20AD74BA1D63387A00BD48FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20ECB9B71D634D6000EAA13E /* AViewController.m in Sources */,
+				20AD74C91D63387A00BD48FA /* ViewController.m in Sources */,
+				20AD74C61D63387A00BD48FA /* AppDelegate.m in Sources */,
+				20AD74C31D63387A00BD48FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		20AD74CA1D63387A00BD48FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AD74CB1D63387A00BD48FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20AD74CF1D63387A00BD48FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20AD74D01D63387A00BD48FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20AD74D31D63387A00BD48FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		20AD74D41D63387A00BD48FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20AD74D61D63387A00BD48FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NSTread创建线程的三种方式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.NSTread---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20AD74D71D63387A00BD48FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NSTread创建线程的三种方式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.NSTread---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20AD74B91D63387A00BD48FA /* Build configuration list for PBXProject "NSTread创建线程的三种方式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AD74D31D63387A00BD48FA /* Debug */,
+				20AD74D41D63387A00BD48FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20AD74D51D63387A00BD48FA /* Build configuration list for PBXNativeTarget "NSTread创建线程的三种方式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20AD74D61D63387A00BD48FA /* Debug */,
+				20AD74D71D63387A00BD48FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20AD74B61D63387A00BD48FA /* Project object */;
+}

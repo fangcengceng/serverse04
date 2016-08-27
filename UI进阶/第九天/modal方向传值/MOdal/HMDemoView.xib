@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMDemoView">
+            <connections>
+                <outlet property="mima" destination="rna-sP-1hH" id="Kx2-Wa-Ekd"/>
+                <outlet property="textfield" destination="SdR-gw-7mP" id="c34-0o-cUU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xCA-Ei-by4">
+                    <rect key="frame" x="277" y="285" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="clickButton:" destination="-1" eventType="touchUpInside" id="e1x-wV-Wkt"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdR-gw-7mP">
+                    <rect key="frame" x="20" y="80" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rna-sP-1hH">
+                    <rect key="frame" x="20" y="130" width="560" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.20372077822685242" green="0.84641826152801514" blue="0.12064141780138016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SdR-gw-7mP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="17D-5Y-wgo"/>
+                <constraint firstAttribute="trailing" secondItem="SdR-gw-7mP" secondAttribute="trailing" constant="20" id="2V2-PP-qRw"/>
+                <constraint firstItem="SdR-gw-7mP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Bnl-J2-Hyi"/>
+                <constraint firstItem="xCA-Ei-by4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="PjF-m8-X4c"/>
+                <constraint firstAttribute="trailing" secondItem="rna-sP-1hH" secondAttribute="trailing" constant="20" id="XWY-uA-uEO"/>
+                <constraint firstItem="rna-sP-1hH" firstAttribute="top" secondItem="SdR-gw-7mP" secondAttribute="bottom" constant="20" id="gbk-Nu-un8"/>
+                <constraint firstItem="rna-sP-1hH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="iHw-c0-mC0"/>
+                <constraint firstItem="xCA-Ei-by4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="jrj-C8-cRG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

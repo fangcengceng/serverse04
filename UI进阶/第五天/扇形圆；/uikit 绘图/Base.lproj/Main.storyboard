@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zpw-QJ-j1e">
+                                <rect key="frame" x="139" y="101" width="322" height="31"/>
+                                <connections>
+                                    <action selector="valuechage:" destination="BYZ-38-t0r" eventType="valueChanged" id="wcA-yg-UaZ"/>
+                                </connections>
+                            </slider>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n6v-VT-HcK">
+                                <rect key="frame" x="141" y="50" width="318" height="2"/>
+                                <color key="progressTintColor" red="0.96862745100000003" green="0.41960784309999999" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYg-7K-Ccd" customClass="DemoView">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="S46-32-yyT"/>
+                                    <constraint firstAttribute="width" constant="240" id="gq1-kA-cFJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VYg-7K-Ccd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2JX-LO-fWZ"/>
+                            <constraint firstItem="n6v-VT-HcK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6sK-pu-dfq"/>
+                            <constraint firstItem="Zpw-QJ-j1e" firstAttribute="top" secondItem="n6v-VT-HcK" secondAttribute="bottom" constant="49" id="PeN-O8-t7M"/>
+                            <constraint firstItem="Zpw-QJ-j1e" firstAttribute="trailing" secondItem="n6v-VT-HcK" secondAttribute="trailing" id="YdO-Bp-Vs8"/>
+                            <constraint firstItem="Zpw-QJ-j1e" firstAttribute="leading" secondItem="n6v-VT-HcK" secondAttribute="trailing" constant="-318" id="ZBk-bd-5K4"/>
+                            <constraint firstItem="Zpw-QJ-j1e" firstAttribute="leading" secondItem="n6v-VT-HcK" secondAttribute="leading" id="cMN-Yl-8he"/>
+                            <constraint firstItem="VYg-7K-Ccd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dyI-zX-CvY"/>
+                            <constraint firstItem="n6v-VT-HcK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="qao-pU-sfs"/>
+                            <constraint firstItem="Zpw-QJ-j1e" firstAttribute="centerX" secondItem="n6v-VT-HcK" secondAttribute="centerX" id="tUq-70-tCR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="demoView" destination="VYg-7K-Ccd" id="fiK-3o-yzO"/>
+                        <outlet property="process" destination="n6v-VT-HcK" id="EyS-R9-cai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="273"/>
+        </scene>
+    </scenes>
+</document>

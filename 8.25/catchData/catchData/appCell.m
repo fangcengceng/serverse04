@@ -24,6 +24,7 @@
 -(void)setShop:(shopModel *)shopmodel{
     _shopmodel = shopmodel;
     self.nameLabel.text = shopmodel.shop_name;
+  //  self.imgView.image = [
     
 }
 -(void)setupUI{
@@ -31,12 +32,17 @@
 
     UILabel *nameLabel = [[UILabel alloc] init];
     nameLabel.backgroundColor = [UIColor redColor];
+    UILabel *downloadLabel = [[UILabel alloc] init];
+    downloadLabel.backgroundColor = [UIColor yellowColor];
+
     UIImageView *imag = [[UIImageView alloc] init];
     nameLabel.numberOfLines = 0;
     [self.contentView addSubview:nameLabel];
     [self.contentView addSubview:imag];
+    [self.contentView addSubview:downloadLabel];
     self.nameLabel = nameLabel;
     self.imgView = imag;
+    
     [nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.bottom.equalTo(self.contentView);
         make.width.mas_equalTo(self.contentView.frame.size.width*0.5);
