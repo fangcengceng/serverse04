@@ -37,14 +37,8 @@
             _arrayList = temparray.copy;
             
             [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                
+                 [self.tableView reloadData];
             }];
-            [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                
-                [self.tableView reloadData];
-                
-            }];
-
         
         }else {
             NSLog(@"%@",error);
