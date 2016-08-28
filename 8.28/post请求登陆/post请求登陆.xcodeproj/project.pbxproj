@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20534B241D72EF1E00829C80 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 20534B231D72EF1E00829C80 /* NSString+Hash.m */; };
 		20CA2AFB1D72CF5C008DB818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2AFA1D72CF5C008DB818 /* main.m */; };
 		20CA2AFE1D72CF5C008DB818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2AFD1D72CF5C008DB818 /* AppDelegate.m */; };
 		20CA2B011D72CF5C008DB818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2B001D72CF5C008DB818 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20534B221D72EF1E00829C80 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		20534B231D72EF1E00829C80 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		20CA2AF61D72CF5C008DB818 /* post请求登陆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "post请求登陆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CA2AFA1D72CF5C008DB818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20CA2AFC1D72CF5C008DB818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +61,8 @@
 		20CA2AF81D72CF5C008DB818 /* post请求登陆 */ = {
 			isa = PBXGroup;
 			children = (
+				20534B221D72EF1E00829C80 /* NSString+Hash.h */,
+				20534B231D72EF1E00829C80 /* NSString+Hash.m */,
 				20CA2AFC1D72CF5C008DB818 /* AppDelegate.h */,
 				20CA2AFD1D72CF5C008DB818 /* AppDelegate.m */,
 				20CA2AFF1D72CF5C008DB818 /* ViewController.h */,
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20CA2B011D72CF5C008DB818 /* ViewController.m in Sources */,
+				20534B241D72EF1E00829C80 /* NSString+Hash.m in Sources */,
 				20CA2AFE1D72CF5C008DB818 /* AppDelegate.m in Sources */,
 				20CA2AFB1D72CF5C008DB818 /* main.m in Sources */,
 			);
@@ -300,6 +306,7 @@
 				20CA2B0F1D72CF5C008DB818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
