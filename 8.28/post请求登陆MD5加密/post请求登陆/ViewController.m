@@ -39,6 +39,14 @@
      3.如果没有值,直接手动的输入账号和密码
      */
     [self readinfos];
+    /*
+     加密时机：
+     1.密码在网络中传输时,需要加密
+     2.隐私信息(密码...)保存到本地需要加密
+     
+     解密
+     1.读取本地隐私信息时,解密
+     */
 }
 #pragma 点击事件
 - (IBAction)clicklogin:(UIButton *)sender {
@@ -79,13 +87,10 @@
 
 -(NSData *)getHttpData{
 #pragma 请求体的创建，要求最终格式是二进制数
-    //MARK:pragma 请求体的创建，要求最终格式是二进制数
-    NSString *userstr = self.usertextField.text;
-    NSString *passstr = self.passworlField.text;
     //MARK: 拼接请求体内容, username跟password是后台给的字段
-    NSString *httpbodystr = [NSString stringWithFormat:@"username=%@&password=%@",userstr,passstr];
+    NSString *httpbodystr = [NSString stringWithFormat:@"username=%@&password=%@",self.usertextField.text,self.passworlField.text];
+      //MARK:pragma 请求体的创建，要求最终格式是二进制数
     NSData *HTTPdata = [httpbodystr dataUsingEncoding:NSUTF8StringEncoding];
-    
     return HTTPdata;
 }
 
