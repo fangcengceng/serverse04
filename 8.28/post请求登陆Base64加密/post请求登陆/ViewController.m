@@ -13,6 +13,7 @@
 // 后台提供的userId 跟 成功与否的value值 1
 
 //MARK2 将密码存储到系统偏好设置中
+
 //MARK3 将密码加密处理
 #define KUSERNAME @"username"
 #define KPASSWORD @"passworld"
