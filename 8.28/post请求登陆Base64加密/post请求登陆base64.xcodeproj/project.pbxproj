@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		20534B221D72EF1E00829C80 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		20534B231D72EF1E00829C80 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
-		20CA2AF61D72CF5C008DB818 /* post请求登陆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "post请求登陆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CA2AF61D72CF5C008DB818 /* post请求登陆base64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "post请求登陆base64.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CA2AFA1D72CF5C008DB818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20CA2AFC1D72CF5C008DB818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20CA2AFD1D72CF5C008DB818 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		20CA2AF71D72CF5C008DB818 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20CA2AF61D72CF5C008DB818 /* post请求登陆.app */,
+				20CA2AF61D72CF5C008DB818 /* post请求登陆base64.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20CA2AF51D72CF5C008DB818 /* post请求登陆 */ = {
+		20CA2AF51D72CF5C008DB818 /* post请求登陆base64 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20CA2B0D1D72CF5C008DB818 /* Build configuration list for PBXNativeTarget "post请求登陆" */;
+			buildConfigurationList = 20CA2B0D1D72CF5C008DB818 /* Build configuration list for PBXNativeTarget "post请求登陆base64" */;
 			buildPhases = (
 				20CA2AF21D72CF5C008DB818 /* Sources */,
 				20CA2AF31D72CF5C008DB818 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = "post请求登陆";
+			name = "post请求登陆base64";
 			productName = "post请求登陆";
-			productReference = 20CA2AF61D72CF5C008DB818 /* post请求登陆.app */;
+			productReference = 20CA2AF61D72CF5C008DB818 /* post请求登陆base64.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -118,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20CA2AF11D72CF5C008DB818 /* Build configuration list for PBXProject "post请求登陆" */;
+			buildConfigurationList = 20CA2AF11D72CF5C008DB818 /* Build configuration list for PBXProject "post请求登陆base64" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -131,7 +131,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20CA2AF51D72CF5C008DB818 /* post请求登陆 */,
+				20CA2AF51D72CF5C008DB818 /* post请求登陆base64 */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +272,7 @@
 				INFOPLIST_FILE = "post请求登陆/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.post----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "post请求登陆base64";
 			};
 			name = Debug;
 		};
@@ -283,14 +283,14 @@
 				INFOPLIST_FILE = "post请求登陆/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.itheima.post----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "post请求登陆base64";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20CA2AF11D72CF5C008DB818 /* Build configuration list for PBXProject "post请求登陆" */ = {
+		20CA2AF11D72CF5C008DB818 /* Build configuration list for PBXProject "post请求登陆base64" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20CA2B0B1D72CF5C008DB818 /* Debug */,
@@ -299,7 +299,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20CA2B0D1D72CF5C008DB818 /* Build configuration list for PBXNativeTarget "post请求登陆" */ = {
+		20CA2B0D1D72CF5C008DB818 /* Build configuration list for PBXNativeTarget "post请求登陆base64" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20CA2B0E1D72CF5C008DB818 /* Debug */,

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20534B241D72EF1E00829C80 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 20534B231D72EF1E00829C80 /* NSString+Hash.m */; };
+		20534B2C1D732A6A00829C80 /* SSKeychain.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20534B261D732A6A00829C80 /* SSKeychain.strings */; };
+		20534B2D1D732A6A00829C80 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 20534B291D732A6A00829C80 /* SSKeychain.m */; };
+		20534B2E1D732A6A00829C80 /* SSKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 20534B2B1D732A6A00829C80 /* SSKeychainQuery.m */; };
 		20CA2AFB1D72CF5C008DB818 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2AFA1D72CF5C008DB818 /* main.m */; };
 		20CA2AFE1D72CF5C008DB818 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2AFD1D72CF5C008DB818 /* AppDelegate.m */; };
 		20CA2B011D72CF5C008DB818 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA2B001D72CF5C008DB818 /* ViewController.m */; };
@@ -19,6 +22,11 @@
 /* Begin PBXFileReference section */
 		20534B221D72EF1E00829C80 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		20534B231D72EF1E00829C80 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		20534B271D732A6A00829C80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SSKeychain.strings; sourceTree = "<group>"; };
+		20534B281D732A6A00829C80 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		20534B291D732A6A00829C80 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		20534B2A1D732A6A00829C80 /* SSKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychainQuery.h; sourceTree = "<group>"; };
+		20534B2B1D732A6A00829C80 /* SSKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychainQuery.m; sourceTree = "<group>"; };
 		20CA2AF61D72CF5C008DB818 /* post请求登陆.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "post请求登陆.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CA2AFA1D72CF5C008DB818 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20CA2AFC1D72CF5C008DB818 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20534B251D732A6A00829C80 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				20534B261D732A6A00829C80 /* SSKeychain.strings */,
+				20534B281D732A6A00829C80 /* SSKeychain.h */,
+				20534B291D732A6A00829C80 /* SSKeychain.m */,
+				20534B2A1D732A6A00829C80 /* SSKeychainQuery.h */,
+				20534B2B1D732A6A00829C80 /* SSKeychainQuery.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
 		20CA2AED1D72CF5C008DB818 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +81,7 @@
 		20CA2AF81D72CF5C008DB818 /* post请求登陆 */ = {
 			isa = PBXGroup;
 			children = (
+				20534B251D732A6A00829C80 /* SSKeychain */,
 				20534B221D72EF1E00829C80 /* NSString+Hash.h */,
 				20534B231D72EF1E00829C80 /* NSString+Hash.m */,
 				20CA2AFC1D72CF5C008DB818 /* AppDelegate.h */,
@@ -141,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20534B2C1D732A6A00829C80 /* SSKeychain.strings in Resources */,
 				20CA2B091D72CF5C008DB818 /* LaunchScreen.storyboard in Resources */,
 				20CA2B061D72CF5C008DB818 /* Assets.xcassets in Resources */,
 				20CA2B041D72CF5C008DB818 /* Main.storyboard in Resources */,
@@ -158,12 +180,22 @@
 				20534B241D72EF1E00829C80 /* NSString+Hash.m in Sources */,
 				20CA2AFE1D72CF5C008DB818 /* AppDelegate.m in Sources */,
 				20CA2AFB1D72CF5C008DB818 /* main.m in Sources */,
+				20534B2E1D732A6A00829C80 /* SSKeychainQuery.m in Sources */,
+				20534B2D1D732A6A00829C80 /* SSKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		20534B261D732A6A00829C80 /* SSKeychain.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20534B271D732A6A00829C80 /* en */,
+			);
+			name = SSKeychain.strings;
+			sourceTree = "<group>";
+		};
 		20CA2B021D72CF5C008DB818 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
