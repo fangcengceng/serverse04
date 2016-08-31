@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class BookModel;
+
+@class BookModel,BookCell;
+@protocol bookCellDelegate <NSObject>
+-(void)clickCellToDownLoadTask:(BookCell*) selectedCell;
+@end
 @interface BookCell : UITableViewCell
+@property(nonatomic,weak)id <bookCellDelegate> delegate;
 @property(nonatomic,strong)BookModel *book;
 @end

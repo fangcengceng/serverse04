@@ -15,6 +15,7 @@
 		20A935CE1D75801200BCFCF8 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A935CD1D75801200BCFCF8 /* AViewController.m */; };
 		20A935D11D7596DC00BCFCF8 /* BookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A935D01D7596DC00BCFCF8 /* BookCell.m */; };
 		20A935D41D759CC100BCFCF8 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A935D31D759CC100BCFCF8 /* BookModel.m */; };
+		20A935D71D75AFE200BCFCF8 /* downloadManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A935D61D75AFE200BCFCF8 /* downloadManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		20A935D01D7596DC00BCFCF8 /* BookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCell.m; sourceTree = "<group>"; };
 		20A935D21D759CC100BCFCF8 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
 		20A935D31D759CC100BCFCF8 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		20A935D51D75AFE200BCFCF8 /* downloadManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downloadManage.h; sourceTree = "<group>"; };
+		20A935D61D75AFE200BCFCF8 /* downloadManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = downloadManage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				20A935BE1D757FBF00BCFCF8 /* Main.storyboard */,
 				20A935CC1D75801200BCFCF8 /* AViewController.h */,
 				20A935CD1D75801200BCFCF8 /* AViewController.m */,
+				20A935D51D75AFE200BCFCF8 /* downloadManage.h */,
+				20A935D61D75AFE200BCFCF8 /* downloadManage.m */,
 				20A935D21D759CC100BCFCF8 /* BookModel.h */,
 				20A935D31D759CC100BCFCF8 /* BookModel.m */,
 				20A935CF1D7596DC00BCFCF8 /* BookCell.h */,
@@ -163,6 +168,7 @@
 				20A935CE1D75801200BCFCF8 /* AViewController.m in Sources */,
 				20A935BA1D757FBF00BCFCF8 /* AppDelegate.m in Sources */,
 				20A935B71D757FBF00BCFCF8 /* main.m in Sources */,
+				20A935D71D75AFE200BCFCF8 /* downloadManage.m in Sources */,
 				20A935D41D759CC100BCFCF8 /* BookModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +318,7 @@
 				20A935CB1D757FBF00BCFCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

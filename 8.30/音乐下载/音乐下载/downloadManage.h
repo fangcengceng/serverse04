@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface downloadManage : NSObject
-
+@property(nonatomic,copy)NSString *urlname ;
+-(void)downloadWithUrlname:(NSString *)urlname progressBlock:(void(^)(float progress))progressBlock filepathBlock:(void(^)(NSString *filepath))filepathBlock;
++(instancetype)sharedmanage;
 @end

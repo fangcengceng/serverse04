@@ -11,5 +11,6 @@
 @interface BookModel : NSObject
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,copy)NSString *path;
+@property(assign,nonatomic)BOOL isSelectedBtn;
 +(instancetype)bookWithDic:(NSDictionary*)dict;
 @end
