@@ -19,9 +19,23 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSM-dA-qJ5">
                                 <rect key="frame" x="164" y="205" width="87" height="30"/>
-                                <state key="normal" title="下载文件"/>
+                                <state key="normal" title="开始下载"/>
                                 <connections>
                                     <action selector="downloadclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qhW-eA-OXD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuu-pn-LZS">
+                                <rect key="frame" x="158" y="288" width="117" height="30"/>
+                                <state key="normal" title="取消下载"/>
+                                <connections>
+                                    <action selector="canceldownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Joq-g2-S0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5i7-96-Vmp">
+                                <rect key="frame" x="184" y="386" width="91" height="30"/>
+                                <state key="normal" title="继续下载"/>
+                                <connections>
+                                    <action selector="pausedownload:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u9A-nW-yHm"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -58,14 +58,8 @@
 		20A30C491D76ACBC00C0D8F4 /* NSURLSession实现单文件下载 */ = {
 			isa = PBXGroup;
 			children = (
-				20A30C4D1D76ACBC00C0D8F4 /* AppDelegate.h */,
-				20A30C4E1D76ACBC00C0D8F4 /* AppDelegate.m */,
 				20A30C501D76ACBC00C0D8F4 /* ViewController.h */,
 				20A30C511D76ACBC00C0D8F4 /* ViewController.m */,
-				20A30C531D76ACBC00C0D8F4 /* Main.storyboard */,
-				20A30C561D76ACBC00C0D8F4 /* Assets.xcassets */,
-				20A30C581D76ACBC00C0D8F4 /* LaunchScreen.storyboard */,
-				20A30C5B1D76ACBC00C0D8F4 /* Info.plist */,
 				20A30C4A1D76ACBC00C0D8F4 /* Supporting Files */,
 			);
 			path = "NSURLSession实现单文件下载";
@@ -74,6 +68,12 @@
 		20A30C4A1D76ACBC00C0D8F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				20A30C531D76ACBC00C0D8F4 /* Main.storyboard */,
+				20A30C4D1D76ACBC00C0D8F4 /* AppDelegate.h */,
+				20A30C4E1D76ACBC00C0D8F4 /* AppDelegate.m */,
+				20A30C5B1D76ACBC00C0D8F4 /* Info.plist */,
+				20A30C581D76ACBC00C0D8F4 /* LaunchScreen.storyboard */,
+				20A30C561D76ACBC00C0D8F4 /* Assets.xcassets */,
 				20A30C4B1D76ACBC00C0D8F4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -300,6 +300,7 @@
 				20A30C601D76ACBC00C0D8F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
